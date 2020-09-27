@@ -1,6 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/userID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:ems="10"
+        android:hint="아이디"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="305dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:ems="10"
+        android:hint="이름"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/passwordChk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="435dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:ems="10"
+        android:hint="비밀번호확인"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:ems="10"
+        android:hint="전화번호"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="Button" />
+</RelativeLayout>
